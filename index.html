@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" lang="pt-br">
+
+
+<head>
+<title>Museu do Louvre PT-BR</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="corpo.css">
+<link rel="stylesheet" href="location.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+    <nav>
+        <ul class="ul-nav">
+            <li class="nav-image">
+                <img src="data:image/png;base64,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" class="navbar-brand">
+            </li>
+
+
+            <li class="nav-item">
+                <a href="#home" class="nav-link">HOME</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#obras" class="nav-link">OBRAS</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#localizacao" class="nav-link">LOCALIZAÇÃO</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#rodape" class="nav-link">INFORMAÇÕES</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home" class="nav-link">INGRESSOS</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+</header>
+
+<body id="body">
+    <article id="home">
+        
+        <img src="https://media.architecturaldigest.com/photos/5900cc370638dd3b70018b33/3:4/w_1547,h_2063,c_
+        limit/Secrets%20of%20Louvre%201.jpg" class="imagem-museu">
+            
+            <h3 class="texto-museu display-5">Inaugurado a finais do século XVIII, o Museu do Louvre é o museu mais importante da França e um 
+                dos mais visitados do mundo. 
+                Atualmente recebe mais de oito milhões de visitantes a cada ano.
+                Formado a partir das coleções da monarquia francesa e das espoliações realizadas durante o Império Napoleônico, o Museu do Louvre 
+                abriu as suas portas em 1793 
+                mostrando um novo modelo de museu, que passava das mãos das classes dirigentes ao desfrute do público geral. 
+            </h3>
+
+    </article>
+
+
+    
+            <h1 class="legenda-obras display-7">OBRAS</h1>
+        <article id="obras">
+            <div class="container-obras">
+                
+                <img src="https://static.turbosquid.com/Preview/2014/12/01__11_36_57/2.jpg271fa8fd-5f9b-43e8-8a53-21fce0e9f648Large.jpg" alt="Escravo Morrendo" class="obras-imagens">
+                    <legend>ESCRAVO MORRENDO</legend>
+                        <p class="descricao-obras">
+                            The Dying Slave é uma escultura do artista renascentista italiano Michelangelo . 
+                            Criado entre 1513 e 1516, deveria servir com outra figura, o Escravo Rebelde , no túmulo do Papa Júlio II.
+                            É uma figura de mármore de 2,15 metros (7' 4") de altura, e é realizada no Louvre , Paris.
+                            Em 1976, o historiador de arte Richard Fly escreveu que "sugere aquele momento em que a vida 
+                            capitula diante da força implacável da matéria morta".No entanto, em um volume acadêmico
+                            recente intitulado The Slave in European Art , Charles Robertson discute o Escravo Moribundo no contexto da 
+                            escravidão real na Itália durante a era do Renascimento.</p>
+            </div>
+
+
+
+            <img src="https://destinomundoafora.com.br/wp-content/uploads/2019/01/DSC_9229-Copy.jpg" alt="Aposentos de Napoleão" class="obras-imagens">
+                <legend>APOSENTOS DE NAPOLEÃO</legend>
+                    <p class="descricao-obras">Cinco salas retratam o luxo da vida de Napoleão III, que governou a França entre 
+                        1848 e 1870, no chamado 2º império, após um golpe de estado, ocorrido em 1851, 
+                        quando deixou de ser presidente e se tornou imperador. Os apartamentos de Napoleão III, 
+                        sobrinho de Napoleão I (a relação de parentesco entre eles é questionada por muitos historiadores) 
+                        ficam entre as salas 82 a 87, no primeiro andar da ala Richelieu do Museu do Louvre.
+                        A área foi usada como residência por Napoleão III, quando estava no poder. As salas retratam 
+                        ambientes de refeição, de estar e dormitório. Os grandes apartamentos foram abertos ao público apenas em 1993, 
+                        depois de terem sido usadas pelo Ministério das Finanças. Por onde se passa, há predomínio de móveis entalhados, 
+                        dourado, veludo vermelho e cristais.</p>
+            
+        
+
+            <img src="https://i0.wp.com/virusdaarte.net/wp-content/uploads/2017/06/agresdeta.jpg" alt="Grande Esfinge de Tânis" class="obras-imagens">
+                <legend>GRANDE ESFINGE DE TÂNIS</legend>
+                    <p class="descricao-obras">Grande Esfinge de Tânis ou “Grand Sphinx de Tânis” é uma das maiores esculturas conservada 
+                    fora do Egito, descoberta em 1825 pelo egiptólogo e cônsul inglês, Henry Salt (1780-1827), 
+                    nas ruínas do Templo de Amon-Rá, na cidade de Tânis, antiga capital do baixo Egito, na XXI dinastia 
+                    (1070 a 945 a.C.) e XXII dinastia (945 a 712 a.C.).
+                    Adquirido em 1826, pelo Museu do Louvre, graças a Jean-François Champollion (1790-1832), 
+                    egiptólogo francês, conservador do Louvre, 1° homem a decifrar os hieróglifos, e que convenceu o 
+                    rei Carlos X (1824-1830), a comprar essa e outras antiguidades egípcias de Henry Salt.
+                    Arqueólogos após estudaram certos detalhes concluíram que a “Esfinge” “ é 
+                    de uma época muito antiga, possivelmente 2600 a.C. Pesa 12 toneladas, e tem 1,83 metros de altura por 
+                    4,80 metros de comprimento e 1,54 metros de largura.</p>   
+                    
+            <img src="https://guiadolouvre.com/wp-content/uploads/2018/12/Code-Hammurabi_Louvre.jpg" alt="CÓDIGO DE HAMMURABI" class="obras-imagens">
+                <legend>Código de Hammurabi</legend>
+                        <p class="descricao-obras">Código de Hammurabi do rei da Babilônia é uma grande pedra de basalto escuro esculpido com 
+                            textos de leis jurídicas redigidos na escrita cuneiforme na língua acadiano falada na antiga Mesopotâmia.
+                            Erigido por ordens do rei da Babilônia, Hammurabi (1792-1750 a.C.) provavelmente na antiga e 
+                            desaparecida cidade de Sippar de Shamash, (deus-sol e da Justiça), na antiga Babilônia, no atual Iraque.
+                            Encontrado em escavações realizadas entre 1901 e 1902, pelo arqueólogo egiptólogo 
+                            francês Jacques de Morgan (1857-1927) na cidade de Susa, sitio arqueológico no Irã.</p>
+
+            <img src="https://guiadolouvre.com/wp-content/uploads/2019/11/São_João_Batista_Leonardo_da_Vinci_Museu_do_Louvre-380x249.jpg" alt="SÃO JOÃO BATISTA"
+            class="obras-imagens">
+                <legend>São João Batista</legend>
+                        <p class="descricao-obras">São João Batista de Leonardo da Vinci, realizado provavelmente 
+                            entre 1513 e 1516, é considerado como uma das maiores obras-primas do alto
+                            renascimento, período que se destacaram os grandes mestres (gênios) da pintura, 
+                            como: Rafael (1483-1520), Michelangelo (1475-1574), Bramante (1444-1514), Andrea del Sarto (1486-1530), Correggio (1489-1534)…
+                            Como na maioria das obras de Leonardo da Vinci são poucas as 
+                            informações que chegaram a nós, sobre quem encomendou a obra, por qual motivo, 
+                            e quem serviu de modelo, talvez seu protegido aluno, Salai (1480-1524).
+                            Segundo alguns historiadores essa obra pode ter sido uma encomenda 
+                            do Papa Leão X (1513-1521), para homenagear a cidade de Florença, que tem santo protetor João Batista.</p>
+
+            <img src="https://i.pinimg.com/originals/3a/41/18/3a41188fb6c2d76de2c6dd3ab8caa03a.jpg" alt="VÊNUS DE MILO" class="obras-imagens">
+                <legend>VÊNUS DE MILO</legend>
+                        
+                        <p class="descricao-obras">Chegou em Paris, pelo embaixador francês no Império Otomano, Charles François de Riffardeau, 
+                            marquês de Rivière (1763-1828) que após comprá-la legalmente deu de presente em 1821 ao rei da França, 
+                            Luís XVIII (1814/1815-1824), que em seguida doou para o Museu do Louvre.
+                            Rapidamente virou a maior atração do museu, 
+                            mas perdeu sua celebridade em 1911, para o quadro da Mona Lisa, de 
+                            Leonardo da Vinci (1452-1519) que havia sido roubado por Vincenzo Peruggia (1881-1925)</p>
+
+            <img src="https://santhatela.com.br/wp-content/uploads/2019/01/gericault-balsa-medusa-d.jpg" alt="BALSA DA MEDUSA" class="obras-imagens" >
+                <legend>BALSA DA MEDUSA</legend>
+                        <p class="descricao-obras">Balsa da Medusa (em francês: Le Radeau de la Méduse) é uma pintura a óleo executada entre 1818 e 1819 pelo 
+                            pintor da época do romantismo e litógrafo Théodore Géricault (1791–1824). 
+                            Está exposta no Museu do Louvre, Paris, e é considerada um ícone da pintura ocidental.
+                            Obcecado pelo naufrágio da Fragata de Medusa, que inspirou a obra, Géricault chegou a entrevistar 
+                            sobreviventes, alguns deles forçados ao canibalismo na tragédia.
+                            Entre os passageiros que teve contato, estavam o engenheiro 
+                            Alexandre Corréard (que também havia participado da construção da balsa) e 
+                            o médico cirurgião Jean-Baptiste-Henri Savigny.
+                            </p>
+
+
+            <img src="https://www.otempo.com.br/image/contentid/policy:1.2010717:1559857715/Capturar-JPG.JPG?f=3x2&amp;w=1224" alt="MONA LISA" class="obras-imagens">
+                <legend>MONA LISA</legend>
+                        <p class="descricao-obras">Mona Lisa ("Senhora Lisa") também conhecida como A Gioconda(em italiano: La Gioconda, "a sorridente" em francês, La Joconde)
+                            ou ainda Mona Lisa del Giocondo ("Senhora Lisa esposa de Giocondo") é a mais notável e conhecida obra de Leonardo da Vinci, 
+                            um dos mais eminentes homens do Renascimento italiano.
+                            Sua pintura foi iniciada em 1503 (terminando-a três ou quatro anos mais tarde) e é nesta obra que o artista melhor 
+                            concebeu a técnica do sfumato. O quadro representa uma mulher com uma expressão introspectiva e um pouco tímida. 
+                            O seu sorriso restrito é muito sedutor, mesmo que um pouco conservador. O seu corpo representa o padrão de beleza da 
+                            mulher na época de Leonardo. Este quadro é provavelmente o retrato mais famoso na história da 
+                            arte, senão, o quadro mais famoso e valioso de todo o mundo. Poucos outros trabalhos de arte 
+                            são tão controversos, questionados, valiosos, elogiados, comemorados ou reproduzidos.</p>
+
+
+
+    </article>
+
+    <article id="localizacao">
+        <h1 class="texto-localizacao-h1">LOCALIZAÇÃO</h1>
+            <h6 class="texto-localizacao display-7" style="text-align:justify;">
+                O Museu do Louvre está instalado no Palácio do Louvre, uma fortaleza do século XII que foi ampliada 
+                e reformada em diversas ocasiões. Antes de que se tornasse um museu, alguns monarcas como Carlos V e 
+                Felipe II utilizaram o palácio como residência real onde acumulavam suas coleções artísticas.
+                Depois da transferência da residência real ao Palácio de Versalhes, o impressionante edifício de 160.000 
+                metros quadrados deu início ao seu processo de transformação a um dos museus mais importantes do mundo.
+                Em 1989 foi construída a pirâmide de cristal, rompendo a monotonia dos grandes blocos cinzas do 
+                museu e que atualmente serve como porta de acesso.</h6>
+                <iframe id="mapa-museu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172814953!2d2.3354553152017545!3d48.86061460850487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sMuseu%20do%20Louvre!5e0!3m2!1spt-BR!2sbr!4v1667660861711!5m2!1spt-BR!2sbr"style="border:0;" allowfullscreen="" 
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+     </article>
+
+     <footer id="rodape">
+       <h1 class="texto-legenda-info display-8">INFORMAÇÕES EXTRAS</h1>
+        <div class="card-footer">
+
+            <div class="footer-item">
+         
+                <h3 class="display-7"><img src="./imagens/horario.svg" class="svg-text">HORÁRIO</h3>
+                    <ul class="lista-inform">
+                        <li class="lista-itens">- Segundas, quintas, sábados e domingos:das 9:00 às 18:00 horas.</li>
+                        <li class="lista-itens">- Quartas e sextas: das 9:00 às 21:45 horas.</li>
+                        <li class="lista-itens">- Terças: <span style="color:red;">fechado.</span></li>
+                    </ul>
+            </div>
+            
+            <div class="footer-item2">
+                <h3 class="display-7"><img src="./imagens/moeda.svg" class="svg-text">PREÇO</h3>
+                    <ul class="lista-inform">
+                        <li class="lista-itens">- Adultos: €20 (R$102,50)</li>
+                        <li class="lista-itens2">- Menores de 18 anos: <span style="color:green;">entrada gratuita.</span></li>
+                        <li class="lista-itens">- Entrada gratuita com <span style="color: purple;">Paris Pass e Paris Museum Pass.</li>
+                        <li class="lista-itens2">- Ingresso do Museu do Louvre com acesso prioritário €20 (R$102,50)</li>
+                    </ul>
+            </div>
+            
+            <div class="footer-item">
+                <h3 class="display-7"><img src="./imagens/train.svg" class="svg-text">LOCOMOÇÃO</h3>
+                    <ul class="lista-inform">
+                        <li class="lista-itens">- Metrô: Palais-Royal - Musée du Louvre, linhas 1 e 7.</li>
+                        <li class="lista-itens">- Ônibus: linhas 24, 63, 68, 69, 73, 83, 84 e 94.</li>
+                    </ul>
+            </div>
+
+            <div class="footer-item2">
+                <h3 class="display-7"><img src="./imagens/locais-proximos.svg" class="svg-text">REFERÊNCIAS</h3>
+                    <ul class="lista-inform">
+                        <li class="lista-itens">- Palácio Real de Paris (299 m)</li>
+                        <li class="lista-itens">- Museu de Artes Decorativas (344 m)</li>
+                        <li class="lista-itens">- Jardim de Tuileries (549 m)</li>
+                        <li class="lista-itens">- Museu d'Orsay (726 m)</li>
+                        <li class="lista-itens">- Praça Vendôme (861 m)</li>
+                    </ul>
+            </div>
+        </div>
+
+          
+        <h5 class="texto-copy display-8">&copy;Museu do Louvre - Todos os direitos reservados</h5>
+     </footer>
+
+    
+
+
+
+</body>
+
+

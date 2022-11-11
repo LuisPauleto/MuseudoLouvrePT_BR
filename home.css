@@ -1,0 +1,18 @@
+.texto-museu{
+    text-align: justify;
+    padding:7px;
+    font-weight: bold;
+
+}
+
+.imagem-museu{
+    width: 100%;
+    
+    
+}
+
+#home{
+    background-color: #e2e2e2ca;
+    padding: 5px;
+    width: 100%;
+}

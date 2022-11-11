@@ -1,0 +1,114 @@
+.footer-item{
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    display: wrap;
+    
+
+}
+
+.card-footer{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    
+    
+}
+
+
+.svg-text{
+    text-align: center;
+    width: 50px;
+    padding: 5px;
+}
+
+.inform{
+    text-align: justify;
+    margin-bottom: 4px;
+    padding: 5px;
+    
+}
+
+.footer-item2{
+    background-color:#e2e2e2ca;
+    padding: 5px;
+    text-align: center;
+    display: wrap;
+    width: 25%;
+    
+
+}
+
+.texto-copy{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    border-top: SOLID BLACK 4PX;
+    margin-top: 7px;
+    
+}
+
+.texto-legenda-info{
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    text-align: center;
+}
+
+.texto-localizacao-h1{
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista-itens{
+    text-align: start;
+        
+}
+
+
+.lista-itens2{
+    text-align: start;
+    
+        
+}
+
+@media screen and (max-width: 605px){
+    .footer-item{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 4px solid #000000ca;
+        
+    }
+
+    .card-footer{
+        display: block;
+        padding: 5px;
+        
+    }
+
+    .footer-item2{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        
+    }
+
+    
+
+    .lista-itens{
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .lista-itens2{
+        text-align: justify;
+        padding: 5px;
+    }
+
+
+}
+
